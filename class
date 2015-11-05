@@ -1,0 +1,66 @@
+/*#include<iostream.h>
+//1.定义一个新的类类型来完成要求的功能
+
+
+//1.定义一个新的类类型来完成要求的功能
+class Rectangle
+{
+	int width,length;
+	//三个函数提供三种不同的功能，用于求周长、面积、改变其大小。
+	//一般是在测试代码中通过类对象来使用
+public:
+	long GetL()
+	{
+		return (width+length)*2;
+	}
+	long GetArea()
+	{
+		return width*length;
+	}
+	void SetSize(int w,int l)
+	{
+		width=w;length=1;
+	}
+};
+
+//2.使用刚刚定义的类类型定义变量（对象）
+//3.利用刚刚定义的对象，对该对象进行操作（调用对象的方法，
+//对其数据成员进行处理）
+void main()
+{
+	Rectangle rc;
+	
+	rc.SetSize(3,5);
+	long L=rc.GetL();
+	long A=rc.GetArea();
+	cout<<L<<","<<A<<endl;
+}
+#include<iostream.h>
+class A
+{
+public:
+	A()
+	{
+		a1=a2=0;
+		cout<<"Default constructor called.\n";
+	}
+	A(int i,int j);
+	~A()
+	{cout<<"Destructor called.\n";}
+	void Print()
+	{cout<<"a1="<<a1<<','<<"a2="<<a2<<endl;}
+private:
+	int a1,a2;
+};
+A::A{int i,int j}
+{
+	a1=i;
+	a2=j;
+	cout<<"Constructor called.\n";
+}
+void main()
+{
+	A a,b(5,8);
+	a.Print();
+	b.Print();
+}*/
